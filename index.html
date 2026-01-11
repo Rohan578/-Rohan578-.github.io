@@ -13,45 +13,30 @@
     }
 
     .container {
-      max-width: 900px;
+      max-width: 800px;
       margin: 0 auto;
-      padding: 40px 20px;
-    }
-
-    .header {
+      padding: 60px 20px;
       text-align: center;
-      margin-bottom: 60px;
     }
 
-    .header h1 {
+    h1 {
       font-size: 2.5em;
       margin-bottom: 10px;
     }
 
-    .header h2 {
-      font-weight: normal;
-      color: #aaa;
-    }
-
-    .section {
-      margin-bottom: 50px;
-    }
-
-    .section h2 {
+    h2 {
+      margin-top: 50px;
+      margin-bottom: 20px;
       border-bottom: 1px solid #333;
       padding-bottom: 8px;
-      margin-bottom: 20px;
     }
 
     .project {
-      background-color: #111;
-      padding: 20px;
-      border-radius: 8px;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
 
     .project p {
-      margin: 0 0 8px 0;
+      margin: 8px 0;
       color: #ccc;
     }
 
@@ -70,51 +55,44 @@
 
   <div class="container">
 
-    <div class="header">
-      <h1>My Engineering Portfolio</h1>
-      <h2>Rohan Shrivastava — Electrical & Computer Engineering</h2>
-    </div>
+    <h1>My Engineering Portfolio</h1>
+    <p>Rohan Shrivastava — Electrical & Computer Engineering</p>
 
-    <div class="section">
-      <h2>About Me</h2>
+    <h2>About Me</h2>
+    <p>
+      I am an Electrical and Computer Engineering student with a passion for
+      robotics, embedded systems, and analog circuits. I enjoy building
+      real-world systems from scratch — from PCB design and CAD modeling to firmware
+      and system integration.
+    </p>
+
+    <h2>Projects</h2>
+
+    <div class="project">
+      <p><strong>Minecraft Redstone IC Project</strong></p>
       <p>
-        I am an Electrical and Computer Engineering student with a passion for
-        robotics, embedded systems, and analog circuits. I enjoy building
-        real-world systems from scratch — from PCB design and CAD modeling to firmware
-        and system integration.
+        Goal to replicate Minecraft redstone using real analog and digital circuitry,
+        translating in-game logic into physical electronic systems.
       </p>
+      <a href="projects/redstone-ic/index.html">View Project →</a>
     </div>
 
-    <div class="section">
-      <h2>Projects</h2>
+    <div class="project">
+      <p><strong>IGVC Projects (Rutgers)</strong></p>
+      <p>
+        Development of an emergency stop (E-Stop) remote and a custom wireless remote
+        controller for the Rutgers Intelligent Ground Vehicle Competition team.
+      </p>
+      <a href="projects/igvc/index.html">View Project →</a>
+    </div>
 
-      <div class="project">
-        <p><strong>Minecraft Redstone IC Project</strong></p>
-        <p>
-          Goal to replicate Minecraft redstone using real analog and digital circuitry,
-          translating in-game logic into physical electronic systems.
-        </p>
-        <a href="projects/redstone-ic/index.html">View Project →</a>
-      </div>
-
-      <div class="project">
-        <p><strong>IGVC Projects (Rutgers)</strong></p>
-        <p>
-          Development of an emergency stop (E-Stop) remote and a custom wireless remote
-          controller for the Rutgers Intelligent Ground Vehicle Competition team.
-        </p>
-        <a href="projects/igvc/index.html">View Project →</a>
-      </div>
-
-      <div class="project">
-        <p><strong>RU HART Robotics</strong></p>
-        <p>
-          Development of an autonomous food delivery robot for Rutgers, focusing on
-          embedded control, safety systems, and system integration.
-        </p>
-        <a href="projects/ru-hart/index.html">View Project →</a>
-      </div>
-
+    <div class="project">
+      <p><strong>RU HART Robotics</strong></p>
+      <p>
+        Development of an autonomous food delivery robot for Rutgers, focusing on
+        embedded control, safety systems, and system integration.
+      </p>
+      <a href="projects/ru-hart/index.html">View Project →</a>
     </div>
 
   </div>
