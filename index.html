@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
   <title>Engineering Portfolio</title>
   <style>
     body {
@@ -29,10 +32,16 @@
       margin-bottom: 20px;
       border-bottom: 1px solid #333;
       padding-bottom: 8px;
+      text-align: left;
+    }
+
+    .section-text {
+      text-align: left;
     }
 
     .project {
       margin-bottom: 40px;
+      text-align: left;
     }
 
     .project p {
@@ -50,6 +59,10 @@
       text-decoration: underline;
     }
 
+    .contact {
+      text-align: left;
+    }
+
     .contact p {
       margin: 10px 0;
     }
@@ -63,36 +76,32 @@
     <p>Rohan Shrivastava — Electrical & Computer Engineering</p>
 
     <h2>About Me</h2>
-    <p>
-      I am an Electrical and Computer Engineering student at Rutgers Unviersity New-Brunswick with a focus in
-      robotics, embedded systems, and analog circuity.
-    </p>
+    <div class="section-text">
+      <p>
+        I am an Electrical and Computer Engineering student at Rutgers University New-Brunswick with a focus in
+        robotics, embedded systems, and analog circuitry.
+      </p>
+    </div>
 
     <h2>Projects</h2>
 
     <div class="project">
       <p><strong>Minecraft Redstone IC Project</strong></p>
-      <p>
-        Goal to replicate Minecraft redstone using analog and digital circuitry
-      </p>
+      <p><strong>Goal:</strong> Replicate Minecraft redstone using analog and digital circuitry.</p>
       <a href="projects/redstone-ic/index.html">View Project →</a>
     </div>
 
     <div class="project">
       <p><strong>IGVC Projects (Rutgers)</strong></p>
-      <p>
-        Development of an emergency stop (E-Stop) remote and a custom wireless remote
-        controller for the Rutgers Intelligent Ground Vehicle Competition team.
-      </p>
+      <p><strong>Goal:</strong> Develop an emergency stop (E-Stop) remote and a custom wireless remote
+        controller for the Rutgers Intelligent Ground Vehicle Competition team.</p>
       <a href="projects/igvc/index.html">View Project →</a>
     </div>
 
     <div class="project">
       <p><strong>RU HART Robotics</strong></p>
-      <p>
-        Development of an autonomous food delivery robot for Rutgers, focusing on
-        embedded control, safety systems, and system integration.
-      </p>
+      <p><strong>Goal:</strong> Develop an autonomous food delivery robot for Rutgers, focusing on
+        embedded control, safety systems, and system integration.</p>
       <a href="projects/ru-hart/index.html">View Project →</a>
     </div>
 
