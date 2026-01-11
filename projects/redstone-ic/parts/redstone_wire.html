@@ -1,44 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redstone Wire</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      line-height: 1.6;
+    }
 
-<h1><a href="/../index.html">Redstone IC Project</a></h1>
-<hr>
-<br>
-<h2><b>Redstone Wire</b><h2>
-<h2>Version 1</h2>
-<P> Note: Redstone wire doesn't function exactly How it does in game but shows it main feature of signal propogation around the wire</P>
+    .header {
+      padding: 30px 20px;
+      border-bottom: 1px solid #333;
+      position: relative;
+      text-align: center;
+      background-color: #000;
+    }
 
-<h3>Description</h3>
-<p>Shows redstone components signal traveling across the wire and stays on for as long as the signal is on.</p>
+    .back {
+      position: absolute;
+      left: 20px;
+      top: 30px;
+    }
 
-<h3>Parts Used</h3>
-<ul>
-  <li>Resistors(x5)(100-220)</li>
-  <li>Leds(x5)</li>
-  <li>Transistor NPN</li>
-  <li>Transistor PNP</li>
-</ul>
+    .back a {
+      color: #4da6ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-<h3>How It Works</h3>
-<p> Led voltage is sourced through the power supply rather than the signal and has the signal activate the transistors to allow positive voltage to flow through Leds to turn them on, but turns of as soon as the signal goes to low.
-</p>
+    .back a:hover {
+      text-decoration: underline;
+    }
 
-<h3>Images</h3>
-<img src="../../../images/redstone/wire-pcb.png" width="400">
-<img src="../../../images/redstone/wire-schematic.png" width="400">
+    h1 {
+      margin: 0;
+      font-size: 2.2em;
+      color: #fff;
+    }
 
-<h3>Demo Video</h3>
-<a href="https://youtube.com/yourdemo">Watch demo</a>
+    .content {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: left;
+      background-color: #000;
+    }
 
-<h3>Design Files</h3>
-<ul>
-  <li><a href="../../../downloads/redstone/wire-schematic.pdf">Schematic</a></li>
-  <li><a href="../../../downloads/redstone/wire-pcb.zip">PCB</a></li>
-  <li><a href="../../../downloads/redstone/wire-cad.step">CAD Model</a></li>
-  <li><a href="../../../downloads/redstone/wire-breadboard.png">Breadboard Layout</a></li>
-</ul>
+    h2 {
+      margin-top: 30px;
+      border-bottom: 1px solid #333;
+      padding-bottom: 6px;
+    }
 
-<h3>Future Improvements</h3>
-<ul>
-  <li>Redstone wire LEDs dim  with the more redstone wire components to it or the longer the line streches for, like in real minecraft</li>
-  <li>Replacing LEDS with non-addressing LED strips </li>
-  <li> Cad model more remsembles redstone wire</li>
-</ul>
+    h3 {
+      margin-top: 20px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    a {
+      color: #4da6ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    img, video {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="back">
+      <a href="https://rohan578-.github.io/index.html">← Back</a>
+    </div>
+    <h1>Redstone Wire</h1>
+  </div>
+
+  <div class="content">
+
+    <h2>Version 1</h2>
+    <p><strong>Note:</strong> Redstone wire doesn't function exactly as it does in Minecraft but demonstrates the main feature of signal propagation across the wire.</p>
+
+    <h3>Description</h3>
+    <p>Shows redstone components signal traveling across the wire and staying on for as long as the signal is on.</p>
+
+    <h3>Parts Used</h3>
+    <ul>
+      <li>Resistors (x5) (100-220 Ω)</li>
+      <li>LEDs (x5)</li>
+      <li>Transistor NPN</li>
+      <li>Transistor PNP</li>
+    </ul>
+
+    <h3>How It Works</h3>
+    <p>The LED voltage is sourced through the power supply rather than the signal. The signal activates the transistors to allow positive voltage to flow through LEDs to turn them on, but turns off as soon as the signal goes low.</p>
+
+    <h3>Images</h3>
+    <img src="../../../images/redstone/wire-pcb.png" alt="Wire PCB">
+    <img src="../../../images/redstone/wire-schematic.png" alt="Wire Schematic">
+
+    <h3>Demo Video</h3>
+    <video controls>
+      <source src="Demo video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p style="text-align:center;"><a href="https://youtube.com/yourdemo">Watch demo on YouTube</a></p>
+
+    <h3>Design Files</h3>
+    <ul>
+      <li><a href="../../../downloads/redstone/wire-schematic.pdf">Schematic (PDF)</a></li>
+      <li><a href="../../../downloads/redstone/wire-pcb.zip">PCB (ZIP)</a></li>
+      <li><a href="../../../downloads/redstone/wire-cad.step">CAD Model (STEP)</a></li>
+      <li><a href="../../../downloads/redstone/wire-breadboard.png">Breadboard Layout</a></li>
+    </ul>
+
+    <h3>Future Improvements</h3>
+    <ul>
+      <li>LEDs dim with longer wire or more connected components, similar to Minecraft behavior.</li>
+      <li>Replace LEDs with non-addressable LED strips.</li>
+      <li>CAD model more closely resembles Redstone wire.</li>
+    </ul>
+
+  </div>
+
+</body>
+</html>
